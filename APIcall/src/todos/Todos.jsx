@@ -19,18 +19,18 @@ const Todos = ({ todosData }) => {
 
             <tbody>
               {
-                todosData.map((item, index) => (
+                todosData.map((val, index) => (
                   <tr key={index} style={{ backgroundColor: index % 2 === 0 ? "#f9f9f9" : "white" }}>
-                    <td style={{ border: "1px solid black", padding: "8px" }}>{item.id}</td>
-                    <td style={{ border: "1px solid black", padding: "8px" }}>{item.todo}</td>
+                    <td style={{ border: "1px solid black", padding: "8px" }}>{val.id}</td>
+                    <td style={{ border: "1px solid black", padding: "8px" }}>{val.todo}</td>
                     <td style={{ border: "1px solid black", padding: "8px" }}>
                       {
-                        item.completed ?
+                        val.completed ?
                           <span style={{ color: "green", fontWeight: "bold" }}>Completed</span> :
                           <span style={{ color: "red", fontWeight: "bold" }}>Not Completed</span>
                       }
                     </td>
-                    <td style={{ border: "1px solid black", padding: "8px" }}>{item.userId}</td>
+                    <td style={{ border: "1px solid black", padding: "8px" }}>{val.userId}</td>
                   </tr>
                 ))
               }

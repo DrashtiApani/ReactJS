@@ -6,11 +6,11 @@ const Carts = ({ cartsData }) => {
     <>
       <div className="container">
         <div className="row">
-          <h1 align="center" style={{ color: "Black", margin: "50px" }}>
+          <h1 align="center" style={{ color: "#2c3e50", margin: "50px" }}>
             ~: Carts :~
           </h1>
 
-          <table className="bordered-table">
+          <table className="custom-table">
             <thead>
               <tr>
                 <th>Id</th>
@@ -23,12 +23,12 @@ const Carts = ({ cartsData }) => {
             </thead>
 
             <tbody>
-              {cartsData.map((item, index) => (
+              {cartsData.map((val, index) => (
                 <tr key={index}>
-                  <td>{item.id}</td>
-                  <td>{item.userId}</td>
+                  <td>{val.id}</td>
+                  <td>{val.userId}</td>
                   <td>
-                    <table className="bordered-table nested-table">
+                    <table className="nested-table">
                       <thead>
                         <tr>
                           <th>Id</th>
@@ -40,22 +40,22 @@ const Carts = ({ cartsData }) => {
                       </thead>
                       <tbody>
                         {
-                          item.products.map((product, idx) => (
+                          val.products.map((product, idx) => (
                             <tr key={idx}>
                               <td>{product.id}</td>
                               <td>{product.title}</td>
                               <td>{product.quantity}</td>
-                              <td>{product.price}</td>
-                              <td>{product.discountPercentage}</td>
+                              <td>${product.price}</td>
+                              <td>{product.discountPercentage}%</td>
                             </tr>
                           ))
                         }
                       </tbody>
                     </table>
                   </td>
-                  <td>{item.discountedTotal}</td>
-                  <td>{item.total}</td>
-                  <td>{item.totalQuantity}</td>
+                  <td>${val.discountedTotal}</td>
+                  <td>${val.total}</td>
+                  <td>{val.totalQuantity}</td>
                 </tr>
               ))}
             </tbody>
@@ -66,19 +66,64 @@ const Carts = ({ cartsData }) => {
       {/* CSS Styles */}
       <style>
         {`
-          .bordered-table {
+          .custom-table {
             width: 100%;
-            border: 2px solid black;
             border-collapse: collapse;
+            font-family: 'Segoe UI', sans-serif;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: #fdfdfd;
+          }
+
+          .custom-table th {
+            background-color: #3498db;
+            color: white;
+            padding: 12px;
             text-align: center;
           }
-          .bordered-table th, .bordered-table td {
-            border: 2px solid black;
+
+          .custom-table td {
+            border: 1px solid #ddd;
             padding: 10px;
+            text-align: center;
+            background-color: #ffffff;
+            color: #2c3e50;
           }
+
+          .custom-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+          }
+
+          .custom-table tr:hover {
+            background-color: #f1f1f1;
+          }
+
           .nested-table {
             width: 100%;
+            border-collapse: collapse;
             margin-top: 10px;
+          }
+
+          .nested-table th {
+            background-color: #2ecc71;
+            color: white;
+            padding: 8px;
+            font-size: 14px;
+          }
+
+          .nested-table td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            font-size: 13px;
+            background-color: #fbfbfb;
+            color: #34495e;
+          }
+
+          .nested-table tr:nth-child(even) {
+            background-color: #f0f9f0;
+          }
+
+          .nested-table tr:hover {
+            background-color: #e3fbe3;
           }
         `}
       </style>

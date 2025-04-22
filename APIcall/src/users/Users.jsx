@@ -1,91 +1,62 @@
-import React from 'react'
+import React from 'react';
 
 const Users = ({ usersData }) => {
-    console.log(usersData)
-
     return (
         <>
             <div className="container">
                 <div className="row">
-                    <h1 align="center" style={{ color: "Black", margin: "30px" }}>~: Users :~</h1>
+                    <h1 align="center" style={{ color: "#2c3e50", margin: "40px 0" }}>~: Users :~</h1>
 
-                    <table style={{ borderCollapse: "collapse", width: "100%" }}>
+                    <table className="users-table">
                         <thead>
-                            <tr style={{ backgroundColor: "#343a40", color: "white" }}>
-                                <th style={{ border: "1px solid black", padding: "8px" }}>ID</th>
-                                <th style={{ border: "1px solid black", padding: "8px" }}>Name</th>
-                                <th style={{ border: "1px solid black", padding: "8px" }}>Age</th>
-                                <th style={{ border: "1px solid black", padding: "8px" }}>Email</th>
-                                <th style={{ border: "1px solid black", padding: "8px" }}>Birthdate</th> 
-                                <th style={{ border: "1px solid black", padding: "8px" }}>Blood Group</th> 
-                                <th style={{ border: "1px solid black", padding: "8px" }}> phone</th> 
-                                <th style={{ border: "1px solid black", padding: "8px" }}> password</th> 
-                                <th style={{ border: "1px solid black", padding: "8px" }}> Hair</th> 
-                                {/* <th style={{ border: "1px solid black", padding: "8px" }}>Images</th> */}
-                                <th style={{ border: "1px solid black", padding: "8px" }}>Role</th>
-
-                                <th style={{ border: "1px solid black", padding: "8px" }}>Address</th>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Email</th>
+                                <th>Birthdate</th>
+                                <th>Blood Group</th>
+                                <th>Phone</th>
+                                <th>Password</th>
+                                <th>Hair</th>
+                                <th>Role</th>
+                                <th>Address</th>
                             </tr>
                         </thead>
 
                         <tbody>
                             {
                                 usersData.map((val, index) => (
-                                    <tr key={index} style={{ backgroundColor: index % 2 === 0 ? "#f9f9f9" : "white" }}>
-                                        <td style={{ border: "1px solid black", padding: "8px" }}>{val.id}</td>
-                                        <td style={{ border: "1px solid black", padding: "8px" }}>{val.lastName}</td>
-                                        <td style={{ border: "1px solid black", padding: "8px" }}>{val.age}</td>
-                                        <td style={{ border: "1px solid black", padding: "8px" }}>{val.email}</td>
-                                        <td style={{ border: "1px solid black", padding: "8px" }}>{val.birthDate}</td>
-                                        <td style={{ border: "1px solid black", padding: "8px" }}>{val.bloodGroup}</td>
-                                        <td style={{ border: "1px solid black", padding: "8px" }}>{val.phone}</td>
-                                        <td style={{ border: "1px solid black", padding: "8px" }}>{val.password}</td>
-                                        <td style={{ border: "1px solid black", padding: "8px" }}>
-                                            <table style={{ borderCollapse: "collapse", width: "100%" }}>
+                                    <tr key={index}>
+                                        <td>{val.id}</td>
+                                        <td>{val.lastName}</td>
+                                        <td>{val.age}</td>
+                                        <td>{val.email}</td>
+                                        <td>{val.birthDate}</td>
+                                        <td>{val.bloodGroup}</td>
+                                        <td>{val.phone}</td>
+                                        <td>{val.password}</td>
+                                        <td>
+                                            <table className="nested-table">
                                                 <tbody>
-                                                    <tr style={{ backgroundColor: "#dee2e6" }}>
-                                                        <td style={{ border: "1px solid black", padding: "1px" }}>
-                                                            Color: {val.hair.color}
-                                                        </td>
-                                                        <td style={{ border: "1px solid black", padding: "1px" }}>
-                                                            Type: {val.hair.type}
-                                                        </td>
+                                                    <tr>
+                                                        <td>Color: {val.hair.color}</td>
+                                                        <td>Type: {val.hair.type}</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
                                         </td>
-                                        {/* 
-                                        <td style={{ border: "1px solid black", padding: "8px" }}>
-                                            <ul>
-                                                {val.image.map((img, index) => (
-                                                    <li key={index}>{img}</li>
-                                                ))}
-                                            </ul>
-                                        </td> 
-                                        */}
-                                        <td style={{ border: "1px solid black", padding: "8px" }}>{val.role}</td>
-                                        <td style={{ border: "1px solid black", padding: "8px" }}>
-                                            <table style={{ borderCollapse: "collapse", width: "100%" }}>
+                                        <td>{val.role}</td>
+                                        <td>
+                                            <table className="nested-table">
                                                 <tbody>
-                                                    <tr style={{ backgroundColor: "#dee2e6" }}>
-                                                        <td style={{ border: "1px solid black", padding: "2px" }}>
-                                                            Street: {val.address.address}
-                                                        </td>
-                                                        <td style={{ border: "1px solid black", padding: "2px" }}>
-                                                            City: {val.address.city}
-                                                        </td>
-                                                        <td style={{ border: "1px solid black", padding: "2px" }}>
-                                                            State: {val.address.state}
-                                                        </td>
-                                                        <td style={{ border: "1px solid black", padding: "2px" }}>
-                                                            Code: {val.address.stateCode}
-                                                        </td>
-                                                        <td style={{ border: "1px solid black", padding: "2px" }}>
-                                                            Country: {val.address.country}
-                                                        </td>
-                                                        <td style={{ border: "1px solid black", padding: "2px" }}>
-                                                            Postal: {val.address.postalCode}
-                                                        </td>
+                                                    <tr>
+                                                        <td>Street: {val.address.address}</td>
+                                                        <td>City: {val.address.city}</td>
+                                                        <td>State: {val.address.state}</td>
+                                                        <td>Code: {val.address.stateCode}</td>
+                                                        <td>Country: {val.address.country}</td>
+                                                        <td>Postal: {val.address.postalCode}</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -97,8 +68,71 @@ const Users = ({ usersData }) => {
                     </table>
                 </div>
             </div>
-        </>
-    )
-}
 
-export default Users
+            {/* CSS Styling */}
+            <style>
+                {`
+                .users-table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    font-family: 'Segoe UI', sans-serif;
+                    background-color: #fff;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+                    border-radius: 8px;
+                    overflow: hidden;
+                }
+
+                .users-table th {
+                    background-color: #444;
+                    color: white;
+                    padding: 12px;
+                    text-align: left;
+                    font-size: 14px;
+                }
+
+                .users-table td {
+                    padding: 12px;
+                    border-bottom: 1px solid #ddd;
+                    font-size: 13px;
+                    color: #333;
+                    vertical-align: top;
+                }
+
+                .users-table tr:nth-child(even) {
+                    background-color: #f9f9f9;
+                }
+
+                .users-table tr:hover {
+                    background-color: #f1f1f1;
+                }
+
+                .nested-table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    font-size: 12px;
+                }
+
+                .nested-table td {
+                    padding: 4px 6px;
+                    border: 1px solid #ccc;
+                    background-color: #f0f0f0;
+                    color: #555;
+                }
+
+                @media (max-width: 768px) {
+                    .users-table th, .users-table td {
+                        font-size: 12px;
+                        padding: 8px;
+                    }
+
+                    .nested-table td {
+                        font-size: 11px;
+                    }
+                }
+                `}
+            </style>
+        </>
+    );
+};
+
+export default Users;

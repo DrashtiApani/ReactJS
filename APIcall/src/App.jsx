@@ -139,8 +139,6 @@ function App() {
     getQuotes()
   }, [])
 
-
-
   // users
  
   let [users, setUsers] = useState([])

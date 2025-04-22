@@ -22,32 +22,32 @@ const Post = ({ postData }) => {
 
                         <tbody>
                             {
-                                postData.map((item, index) => (
+                                postData.map((val, index) => (
                                     <tr
                                         key={index}
                                         style={{
                                             backgroundColor: index % 2 === 0 ? "#f2f2f2" : "white"
                                         }}
                                     >
-                                        <td style={{ border: "1px solid black", padding: "8px" }}>{item.id}</td>
-                                        <td style={{ border: "1px solid black", padding: "8px" }}>{item.title}</td>
-                                        <td style={{ border: "1px solid black", padding: "8px" }}>{item.body}</td>
-                                        <td style={{ border: "1px solid black", padding: "8px" }}>{item.userId}</td>
+                                        <td style={{ border: "1px solid black", padding: "8px" }}>{val.id}</td>
+                                        <td style={{ border: "1px solid black", padding: "8px" }}>{val.title}</td>
+                                        <td style={{ border: "1px solid black", padding: "8px" }}>{val.body}</td>
+                                        <td style={{ border: "1px solid black", padding: "8px" }}>{val.userId}</td>
                                         <td style={{ border: "1px solid black", padding: "8px" }}>
                                             {
-                                                item.reactions === true ?
+                                                val.reactions === true ?
                                                     <span style={{ color: "green" }} >True</span> :
                                                     <span style={{ color: "red" }}>False</span>
                                             }
                                         </td>
                                         <td style={{ border: "1px solid black", padding: "8px" }}>
                                             {
-                                                item.tags.map((tag, index) => (
+                                                val.tags.map((tag, index) => (
                                                     <span key={index} style={{ marginRight: "5px" }}>{tag}</span>
                                                 ))
                                             }
                                         </td>
-                                        <td style={{ border: "1px solid black", padding: "8px" }}>{item.views}</td>
+                                        <td style={{ border: "1px solid black", padding: "8px" }}>{val.views}</td>
                                     </tr>
                                 ))
                             }
