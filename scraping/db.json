@@ -1,0 +1,86 @@
+{
+    "logo":{
+        "img" : "https://www.rnwmultimedia.edu.in/assets/img/photos/rnw-logo.png"
+    },
+
+    "menu" : [
+        "home",
+        {
+            "STD 10 & 12" :[
+                "ITA-CS+",
+                "Animation  & VFX 2 Year",
+                "Business Administration Commerce"
+            ]
+        },
+        {
+            "career course" : [
+                {
+                    "Design" : [
+                        "Master in Graphic Design",
+                        "Master in UI/UX & Graphic Design",
+                        "UI/UX Design course",
+                        "Master in Game Design"
+                    ],
+                    "Visualization" : [
+                        "Master in Animation",
+                        "Animation  & VFX 2 Year"
+                    ],
+                    "Coding & Programming" : [
+                        "Master in Web Designing",
+                        "Master in Front End Developing",
+                        "Master in Web Development",
+                        "Master in IOS Development",
+                        "Master in Game Development",
+                        "Master in Flutter",
+                        "Advance in Python",
+                        "Full Stack Development"
+                    ]
+                }
+            ]
+        },
+        {
+            "Courses" :{
+
+                "Programing" : [
+                    "Java",
+                    "Python",
+                    "Andoid",
+                    "IOS",
+                    "React Native",
+                    "React JS",
+                    "Node JS",
+                    "PHP",
+                    "Unity c# Script",
+                    "Flutter",
+                    "Angular js",
+                    "laravel"
+                ],
+                "Graphic Design" : [
+                    "Photoshop",
+                    "Illustrator",
+                    "Figma",
+                    "Corel Draw",
+                    "After Effect",
+                    "Poster Design"
+                ],
+                "Vidio Editing" : [
+                    "davinci resolve course",
+                    "vidio editing "
+                ],
+                "Short term" : [
+                    "Microsoft office",
+                    "cyber security",
+                    "Full stack development",
+                    "Boot camp",
+                    "Data analysis",
+                    "Autodesk Autocad",
+                    "Digital marketing",
+                    "Visual Effect course"
+                ],
+                "Frontend coding" : [
+                    "HTML5"]
+            }
+        }
+
+    ]
+}
