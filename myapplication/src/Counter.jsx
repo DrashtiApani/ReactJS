@@ -4,8 +4,8 @@ const Application = ({plus,cnt,minus,reset}) => {
             <h1>Counter-App</h1>
             <h2>Count : {cnt}</h2>
 
-            <button onClick={() => plus()} style={{marginRight: '10px'}}>Increment</button>
-            <button  onClick={() => minus()} style={{marginRight: '10px'}}>Decrement</button>
+            <button onClick={() => plus()}  style={{marginRight: '10px'}}>Increment</button>
+            <button  onClick={() => minus()} disabled={cnt === 0} style={{marginRight: '10px'}}>Decrement</button>
             <button  onClick={() => reset()} style={{marginRight: '10px'}}>Reset</button>
 
         </div>
