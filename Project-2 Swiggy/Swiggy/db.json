@@ -1,0 +1,517 @@
+{
+  "banner": [
+    {
+      "img1": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/8/1/fa01e85b-3057-482d-9523-5289722b1df2_Food4BU.png",
+      "img2": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/8/16/ca34e375-f1bd-4a2e-a3e7-0a20833be83b_IM4BU1.png",
+      "img3": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/8/1/76c30e5a-8adb-4795-bf5b-fa64e9e9e1d3_DO4BU.png",
+      "img4": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/31/14033c0b-8907-420b-b72a-d26cfa68dc7b_Genie4BU.png"
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Pizza.png"
+    },
+    {
+      "id": 2,
+      "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Burger.png"
+    },
+    {
+      "id": 3,
+      "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Chinese.png"
+    },
+    {
+      "id": 4,
+      "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Dosa.png"
+    },
+    {
+      "id": 5,
+      "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Rolls.png"
+    },
+    {
+      "id": 6,
+      "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Shake.png"
+    },
+    {
+      "id": 7,
+      "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Cake.png"
+    },
+    {
+      "id": 8,
+      "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Pav%20Bhaji.png"
+    },
+    {
+      "id": 9,
+      "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Salad.png"
+    },
+    {
+      "id": 10,
+      "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/North%20Indian.png"
+    },
+    {
+      "id": 11,
+      "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Khichdi.png"
+    },
+    {
+      "id": 12,
+      "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Parotta.png"
+    }
+  ],
+  "siggyApp": [
+    {
+      "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/seo/App_download_banner.png"
+    }
+  ],
+  "foods": [
+    {
+      "id": 1,
+      "title": "Domino's Pizza",
+      "img": "https://a.mktgcdn.com/p/qSB9pU_z_0WJwy8wendcup6NgA5-RzzhVF-S__f0iV4/3456x4320.jpg",
+      "rate": "⭐ 4.1",
+      "minute": "20-30 minutes",
+      "content": "Pizza, Garlic Bread, Beverages",
+      "location": "Vesu",
+      "category": "pizza"
+    },
+    {
+      "id": 2,
+      "title": "La Pino'z Pizza",
+      "img": "https://livemtl.ca/files/site/pictures/70990210_10156875068689983_4794707378207457280_o.jpg",
+      "rate": "⭐ 4.3",
+      "minute": "25-35 minutes",
+      "content": "Cheesy Pizza, Pasta, Shakes",
+      "location": "Piplod",
+      "category": "pizza"
+    },
+    {
+      "id": 3,
+      "title": "Pizza Hut",
+      "img": "https://tse1.mm.bing.net/th?id=OIP.N71HEkYszEPzpuCEsWH2NQHaFj&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.0",
+      "minute": "20-25 minutes",
+      "content": "Pizza, Pasta, Salads",
+      "location": "Surat",
+      "category": "pizza"
+    },
+    {
+      "id": 4,
+      "title": "Smokin' Joe's",
+      "img": "https://tse1.mm.bing.net/th?id=OIP.G6yxPZss-eD6f06s0QPU4wHaHa&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.2",
+      "minute": "25-30 minutes",
+      "content": "Cheesy Pizza, Garlic Bread, Beverages",
+      "location": "Ghod Dod Road",
+      "category": "pizza"
+    },
+    {
+      "id": 5,
+      "title": "Pizza Express",
+      "img": "https://tse4.mm.bing.net/th?id=OIP.So59szHI5wEcH3iDe2c_lgHaFF&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.4",
+      "minute": "30-40 minutes",
+      "content": "Pizza, Pasta, Garlic Bread",
+      "location": "Vesu",
+      "category": "pizza"
+    },
+    {
+      "id": 6,
+      "title": "Burger King",
+      "img": "https://tse2.mm.bing.net/th?id=OIP.4_PfR2voYWlGZRS2LHTuKwHaHa&pid=Api&P=0&h=180g",
+      "rate": "⭐ 4.1",
+      "minute": "20-30 minutes",
+      "content": "Burger, French Fries, Beverages",
+      "location": "Vesu",
+      "category": "burger"
+    },
+    {
+      "id": 7,
+      "title": "Burger Express",
+      "img": "https://tse2.mm.bing.net/th?id=OIP.ywXnCyTru4Wi2tbsu9m_sQHaGE&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.3",
+      "minute": "25-35 minutes",
+      "content": "Cheesy Burger, Pasta, Shakes",
+      "location": "Piplod",
+      "category": "burger"
+    },
+    {
+      "id": 8,
+      "title": "McDonald's",
+      "img": "https://tse1.mm.bing.net/th?id=OIP.YDpVHZygEM-L7bv-ceARBQAAAA&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.0",
+      "minute": "20-25 minutes",
+      "content": "Burgers, Wraps, Desserts",
+      "location": "City Plus",
+      "category": "burger"
+    },
+    {
+      "id": 9,
+      "title": "KFC",
+      "img": "https://tse4.mm.bing.net/th?id=OIP.Njr2qahQ8gh0GjyDiVbMswHaKQ&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.2",
+      "minute": "25-30 minutes",
+      "content": "Burgers, Fried Chicken, Beverages",
+      "location": "Surat",
+      "category": "burger"
+    },
+    {
+      "id": 10,
+      "title": "Hardee's",
+      "img": "https://tse3.mm.bing.net/th?id=OIP.-7cWqNjkoke5UffF8ykWWwHaF_&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.1",
+      "minute": "20-30 minutes",
+      "content": "Burgers, Fries, Soft Drinks",
+      "location": "Vesu",
+      "category": "burger"
+    },
+    {
+      "id": 11,
+      "title": "Wok on Fire",
+      "img": "https://tse3.mm.bing.net/th?id=OIP.zxUhrvWZSczurp13JhAXDwHaEK&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.5",
+      "minute": "25-30 minutes",
+      "content": "Chinese, Thai, Asian",
+      "location": "Vesu",
+      "category": "chinese"
+    },
+    {
+      "id": 12,
+      "title": "Yo! China",
+      "img": "https://tse4.mm.bing.net/th?id=OIP.RNU40oIz9jSFEsH1tbbNFwHaE8&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.1",
+      "minute": "20-25 minutes",
+      "content": "Chinese, Dim Sum",
+      "location": "Pal",
+      "category": "chinese"
+    },
+    {
+      "id": 13,
+      "title": "Chopstick City",
+      "img": "https://tse2.mm.bing.net/th?id=OIP.CwYQCIDceYdhpd9tY1_7xAHaE8&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.3",
+      "minute": "30-35 minutes",
+      "content": "Chinese, Indo-Chinese",
+      "location": "Athwa",
+      "category": "chinese"
+    },
+    {
+      "id": 14,
+      "title": "Chinese Wok",
+      "img": "https://tse3.mm.bing.net/th?id=OIP.Jk-qoBjNNAxtYXrqqkh_FQHaFb&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.2",
+      "minute": "25-30 minutes",
+      "content": "Chinese, Sichuan",
+      "location": "Surat",
+      "category": "chinese"
+    },
+    {
+      "id": 15,
+      "title": "The Chinese Kitchen",
+      "img": "https://tse1.mm.bing.net/th?id=OIP.fBCh4u8g8YiL4iqriLZcsgHaFj&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.4",
+      "minute": "30-35 minutes",
+      "content": "Chinese, Noodles",
+      "location": "Ghod Dod Road",
+      "category": "chinese"
+    },
+    {
+      "id": 16,
+      "title": "Dosa Plaza",
+      "img": "https://tse3.mm.bing.net/th?id=OIP.Uco7t6ERLQRGee8pXLhaLAHaEK&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.2",
+      "minute": "20-25 minutes",
+      "content": "South Indian, Snacks",
+      "location": "Adajan",
+      "category": "south_indian"
+    },
+    {
+      "id": 17,
+      "title": "Udipi Cafe",
+      "img": "https://tse3.mm.bing.net/th?id=OIP.7cTBBZDw85G8kihZnVlvqQHaE5&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.0",
+      "minute": "25-30 minutes",
+      "content": "Dosa, Idli, Filter Coffee",
+      "location": "City Light",
+      "category": "south_indian"
+    },
+    {
+      "id": 18,
+      "title": "Mysore Magic",
+      "img": "https://tse1.mm.bing.net/th?id=OIP.eE7yvEaa97TyKC2ZIVUCGQHaFj&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.4",
+      "minute": "30-35 minutes",
+      "content": "South Indian, Sambar Specials",
+      "location": "Rander",
+      "category": "south_indian"
+    },
+    {
+      "id": 19,
+      "title": "Sree Krishna Bhavan",
+      "img": "https://tse3.mm.bing.net/th?id=OIP.TDcCf5Ha6ljpmcKkHmdm0AHaFj&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.3",
+      "minute": "25-30 minutes",
+      "content": "Dosa, Idli, Vada",
+      "location": "Adajan",
+      "category": "south_indian"
+    },
+    {
+      "id": 20,
+      "title": "Annapoorna",
+      "img": "https://tse3.mm.bing.net/th?id=OIP.C79nNL7NdrU3jT68J25E7gHaE8&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.1",
+      "minute": "20-25 minutes",
+      "content": "South Indian, Filter Coffee",
+      "location": "Vesu",
+      "category": "south_indian"
+    },
+    {
+      "id": 21,
+      "title": "Taco Tico",
+      "img": "https://tse1.mm.bing.net/th?id=OIP.pelK9k5ccm6GNDcM6fEozQHaE8&pid=Api&P=0&h=180 ",
+      "rate": "⭐ 4.2",
+      "minute": "30-35 minutes",
+      "content": "Mexican, Tacos, Burritos",
+      "location": "Vesu",
+      "category": "mexican"
+    },
+    {
+      "id": 22,
+      "title": "Taco Bell",
+      "img": "https://tse2.mm.bing.net/th?id=OIP.QKAMqBji5-zHpkV5gpzQ5AHaGE&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.3",
+      "minute": "25-30 minutes",
+      "content": "Mexican, Tacos, Burritos",
+      "location": "Ghod Dod Road",
+      "category": "mexican"
+    },
+    {
+      "id": 23,
+      "title": "El Pollo Loco",
+      "img": "https://tse1.mm.bing.net/th?id=OIP.Q7VUNlvTbFEwAL3XB7N9KwHaEK&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.4",
+      "minute": "30-35 minutes",
+      "content": "Mexican, Tacos, Burritos",
+      "location": "Vesu",
+      "category": "mexican"
+    },
+    {
+      "id": 24,
+      "title": "Shake Shack",
+      "img": "https://tse1.mm.bing.net/th?id=OIP.-yFJYobfkq_BEdCReWHtzgHaHa&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.5",
+      "minute": "15-20 minutes",
+      "content": "Milkshakes, Smoothies, Beverages",
+      "location": "Vesu",
+      "category": "shake"
+    },
+    {
+      "id": 25,
+      "title": "Frosty Shakes",
+      "img": "https://tse3.mm.bing.net/th?id=OIP.J_yZeR5KLNv8MTriXHBwqQHaHa&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.1",
+      "minute": "25-30 minutes",
+      "content": "Fruit Shakes, Milkshakes, Smoothies",
+      "location": "Piplod",
+      "category": "shake"
+    },
+    {
+      "id": 26,
+      "title": "Milkshake Heaven",
+      "img": "https://tse3.mm.bing.net/th?id=OIP.EC_W-bDdx1cnGoR-DopcbQHaLH&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.2",
+      "minute": "20-30 minutes",
+      "content": "Vanilla Milkshake, Chocolate Milkshake, Cold Coffee",
+      "location": "Vesu",
+      "category": "shake"
+    },
+    {
+      "id": 27,
+      "title": "Shakes and More",
+      "img": "https://tse1.mm.bing.net/th?id=OIP.mK3sE3KcdaUpe7kTuIUidQHaLG&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.4",
+      "minute": "20-25 minutes",
+      "content": "Fruit Shakes, Chocolate Shake, Mocktails",
+      "location": "Surat",
+      "category": "shake"
+    },
+    {
+      "id": 28,
+      "title": "Shake World",
+      "img": "https://tse2.mm.bing.net/th?id=OIP.MgnVJJz3EKjXeMy5ISsKhgHaLH&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.6",
+      "minute": "15-20 minutes",
+      "content": "Chocolate Shake, Strawberry Shake, Mocktails",
+      "location": "Athwa",
+      "category": "shake"
+    },
+    {
+      "id": 29,
+      "title": "Cool Shakes",
+      "img": "https://tse1.mm.bing.net/th?id=OIP.M85w6CIIRHgnu75ChrA_hAHaLG&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.0",
+      "minute": "25-30 minutes",
+      "content": "Chocolate Shake, Coffee Shake, Milkshakes",
+      "location": "Ghod Dod Road",
+      "category": "shake"
+    },
+    {
+      "id": 30,
+      "title": "The Cake Shop",
+      "img": "https://tse2.mm.bing.net/th?id=OIP.PHdTRR-YP1-NF1hDAHNZigHaEo&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.6",
+      "minute": "30-40 minutes",
+      "content": "Chocolate Cake, Red Velvet Cake, Cupcakes",
+      "location": "Vesu",
+      "category": "cake"
+    },
+    {
+      "id": 31,
+      "title": "Cake World",
+      "img": "https://tse2.mm.bing.net/th?id=OIP.edi17APg5NDgaigSzl9zxAHaEK&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.5",
+      "minute": "25-30 minutes",
+      "content": "Vanilla Cake, Fruit Cake, Cheesecakes",
+      "location": "Adajan",
+      "category": "cake"
+    },
+    {
+      "id": 32,
+      "title": "Bakers and More",
+      "img": "https://tse3.mm.bing.net/th?id=OIP.PS-nNLkIM1kvpXlRKZiK2QHaEo&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.3",
+      "minute": "25-30 minutes",
+      "content": "Chocolate Truffle Cake, Wedding Cakes, Cupcakes",
+      "location": "Vesu",
+      "category": "cake"
+    },
+    {
+      "id": 33,
+      "title": "Dream Cakes",
+      "img": "https://tse4.mm.bing.net/th?id=OIP.HC1ODW0juPwEgbr8aC1SsgHaFj&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.8",
+      "minute": "20-30 minutes",
+      "content": "Chocolate Mousse Cake, Fruit Cake, Cheesecake",
+      "location": "Surat",
+      "category": "cake"
+    },
+    {
+      "id": 34,
+      "title": "Bakes n Cakes",
+      "img": "https://tse3.mm.bing.net/th?id=OIP.K-56xDpzYkDJtpYXeG6MEAHaDt&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.4",
+      "minute": "25-30 minutes",
+      "content": "Cheesecake, Chocolate Cake, Pastries",
+      "location": "Surat",
+      "category": "cake"
+    },
+    {
+      "id": 35,
+      "title": "Pav Bhaji King",
+      "img": "https://tse2.mm.bing.net/th?id=OIP.i_8SYiUG5oSlVE9wcQNZfgHaFj&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.6",
+      "minute": "20-25 minutes",
+      "content": "Pav Bhaji, Puri Bhaji, Dosa",
+      "location": "Vesu",
+      "category": "pavbhaji"
+    },
+    {
+      "id": 36,
+      "title": "The Pav Bhaji House",
+      "img": "https://tse3.mm.bing.net/th?id=OIP.mqDJepb_JpX3yhHPZvVHfwHaLH&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.4",
+      "minute": "25-30 minutes",
+      "content": "Pav Bhaji, Cheese Pav Bhaji, Bhaji",
+      "location": "Adajan",
+      "category": "pavbhaji"
+    },
+    {
+      "id": 37,
+      "title": "Shree Pav Bhaji",
+      "img": "https://tse4.mm.bing.net/th?id=OIP.7_EazOtoo4t0O_qGPG1cRAHaE8&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.7",
+      "minute": "15-20 minutes",
+      "content": "Pav Bhaji, Extra Butter Pav Bhaji, Lassi",
+      "location": "Ghod Dod Road",
+      "category": "pavbhaji"
+    },
+    {
+      "id": 38,
+      "title": "Bombay Pav Bhaji",
+      "img": "https://tse2.mm.bing.net/th?id=OIP.pl4dgt3avHhxNxwURZQbCgHaLH&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.5",
+      "minute": "20-30 minutes",
+      "content": "Pav Bhaji, Masala Pav, Dosas",
+      "location": "Piplod",
+      "category": "pavbhaji"
+    },
+    {
+      "id": 39,
+      "title": "Pav Bhaji Express",
+      "img": "https://tse1.mm.bing.net/th?id=OIP.ruDGkxHdnBMd1RvY7-Cu2QHaFh&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.3",
+      "minute": "25-30 minutes",
+      "content": "Cheese Pav Bhaji, Puri Bhaji, Bhajis",
+      "location": "Vesu",
+      "category": "pavbhaji"
+    },
+    {
+      "id": 40,
+      "title": "Vadilal Pav Bhaji",
+      "img": "https://tse4.mm.bing.net/th?id=OIP.7_EazOtoo4t0O_qGPG1cRAHaE8&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.6",
+      "minute": "15-20 minutes",
+      "content": "Pav Bhaji, Butter Pav Bhaji, Bhaji",
+      "location": "Surat",
+      "category": "pavbhaji"
+    },
+    {
+      "id": 41,
+      "title": "Salad King",
+      "img": "https://tse1.mm.bing.net/th?id=OIP.4Po21wVACiRRpA0PwAgGyAHaEK&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.6",
+      "minute": "15-20 minutes",
+      "content": "Healthy Salads, Fresh Fruits, Vegan",
+      "location": "Vesu",
+      "category": "salad"
+    },
+    {
+      "id": 42,
+      "title": "Green Bowl",
+      "img": "https://tse3.mm.bing.net/th?id=OIP.qFu_LEdKUWYd-81j5uPMcwHaDt&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.4",
+      "minute": "20-25 minutes",
+      "content": "Salads, Smoothies, Organic",
+      "location": "Adajan",
+      "category": "salad"
+    },
+    {
+      "id": 43,
+      "title": "Salad Hut",
+      "img": "https://tse2.mm.bing.net/th?id=OIP.nyOdUkEWZynm0aODxcd9aQHaE-&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.7",
+      "minute": "20-30 minutes",
+      "content": "Mixed Salad, Caesar Salad, Vegan Options",
+      "location": "Ghod Dod Road",
+      "category": "salad"
+    },
+    {
+      "id": 44,
+      "title": "The Salad Bar",
+      "img": "https://tse3.mm.bing.net/th?id=OIP.q1tTouCim4nk1AH917ecuwHaLH&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.5",
+      "minute": "15-20 minutes",
+      "content": "Greek Salad, Mediterranean, Fresh Veggies",
+      "location": "Piplod",
+      "category": "salad"
+    },
+    {
+      "id": 45,
+      "title": "Healthy Greens",
+      "img": "https://tse2.mm.bing.net/th?id=OIP.KWYcegMyD5FYQBHXm7lifwHaHa&pid=Api&P=0&h=180",
+      "rate": "⭐ 4.3",
+      "minute": "25-30 minutes",
+      "content": "Fruit Salads, Protein Salads, Fresh Juices",
+      "location": "Vesu",
+      "category": "salad"
+    }
+  ]
+}
