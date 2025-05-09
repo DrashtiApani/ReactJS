@@ -4,20 +4,20 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [inputValue, setInputValue] = useState('');
   const [isEditing, setIsEditing] = useState(false);
-  const [editIndex, setEditIndex] = useState(null);
+  const [editIndex, setEditIndex] = useState("");
 
   // Add or Update Todo
   const handleAddTodo = () => {
-    if (inputValue.trim() === '') return;
+
 
     if (isEditing) {
       const updatedTodos = [...todos];
       updatedTodos[editIndex].text = inputValue;
       setTodos(updatedTodos);
       setIsEditing(false);
-      setEditIndex(null);
+      setEditIndex("");
     } else {
-      setTodos([...todos, { text: inputValue, isActive: true }]);
+      setTodos([...todos, { text: inputValue, }]);
     }
 
     setInputValue('');
