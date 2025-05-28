@@ -1,0 +1,255 @@
+.product-button {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.product-button:hover {
+  background-color: #64b496;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-head h3 {
+  font-weight: bold;
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+.product-head p {
+  color: grey;
+  font-size: 15px;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 100%;
+  height: 465px;
+  object-fit: cover;
+  display: block;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+.image-overlay h4 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0px 0px 5px;
+}
+
+.image-overlay h5 {
+  font-size: 45px;
+  font-weight: 800;
+  color: #F7E8AA;
+  margin: 0px 0px 5px;
+}
+
+.image-overlay span {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.image-overlay button {
+  background-color: #64b496;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.image-overlay button:hover {
+  background-color: black;
+}
+
+/* Product Card Styles */
+.product-card {
+  height: 110%;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background-color: white;
+}
+
+.image-container {
+  position: relative;
+  height: 160px;
+  margin-bottom: 1rem;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.05);
+}
+
+.lock-icon {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  color: #64b496;
+  z-index: 2;
+  
+}
+
+.hover-icons {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(20px);
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.image-container:hover .hover-icons {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.hover-icons .icon {
+  background: white;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 14px;
+  color: #64b496;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.product-category {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.product-rating {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 9px;
+}
+
+.product-title {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 13px;
+}
+
+.product-price {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.product-price .price {
+  color: #64b496;
+}
+
+.product-price .original-price {
+  text-decoration: line-through;
+  color: #aaa;
+  margin-left: 5px;
+}
+/* healthy css */.promo-banner {
+  position: relative;
+  border-radius: 10px;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Move promo-content to right */
+  align-items: center;
+  padding: 20px;
+}
+
+.promo-content {
+  text-align: right; /* Align all text and elements to right */
+  border-radius: 10px;
+  color: #000000;
+  max-width: 300px;
+}
+
+.promo-content h3 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.promo-content h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.promo-content p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.promo-content p span {
+  font-size: 16px;
+}
+
+.shop-now-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 0px; /* push button to the right inside promo-content */
+  display: inline-block;
+}
+
+.shop-now-btn:hover {
+  background-color: #218838;
+}
