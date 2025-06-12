@@ -7,8 +7,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<View />} />
+        <Route path="/" element={<Add />} />          
         <Route path="/add" element={<Add />} />
+        <Route path="/view" element={<View />} />
         <Route path="/edit/:id" element={<Edit />} />
       </Routes>
     </BrowserRouter>
