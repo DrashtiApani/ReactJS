@@ -1,56 +1,69 @@
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { ADD_USER } from '../redux/action/crudAction';
-import { useDispatch } from 'react-redux';
+import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { UPDATE_USER } from '../redux/action/crudAction';
 
-const Add = () => {
+const Edit = () => {
+  const { id } = useParams();
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const [forminput, setFormInput] = useState({ name: '', age: '' });
+  const users = useSelector(state => state.crud.users);
+  const selectedUser = users.find(user => user.id === parseInt(id));
 
-  const changeInput = (e) => {
+  const [formInput, setFormInput] = useState({ name: '', age: '' });
+
+  useEffect(() => {
+    if (selectedUser) {
+      setFormInput({
+        name: selectedUser.name,
+        age: selectedUser.age
+      });
+    }
+  }, [selectedUser]);
+
+  const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormInput({ ...forminput, [name]: value });
+    setFormInput({ ...formInput, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleUpdate = (e) => {
     e.preventDefault();
-    const obj = {
-      id: Math.floor(Math.random() * 1000000),
-      ...forminput,
+    const updated = {
+      id: parseInt(id),
+      ...formInput
     };
-    dispatch(ADD_USER(obj));
-    alert("✅ User added successfully");
+    dispatch(UPDATE_USER(updated));
+    alert('✅ Client updated successfully');
     navigate('/view');
   };
 
   return (
     <div style={styles.page}>
       <div style={styles.card}>
-        <h2 style={styles.heading}>Add New Client</h2>
-        <form onSubmit={handleSubmit} style={styles.form}>
+        <h2 style={styles.heading}>Edit Client</h2>
+        <form onSubmit={handleUpdate} style={styles.form}>
           <input
             type="text"
             name="name"
-            placeholder="Full Name"
-            value={forminput.name}
-            onChange={changeInput}
+            value={formInput.name}
+            onChange={handleChange}
             style={styles.input}
+            placeholder="Full Name"
             required
           />
           <input
             type="number"
             name="age"
-            placeholder="Age"
-            value={forminput.age}
-            onChange={changeInput}
+            value={formInput.age}
+            onChange={handleChange}
             style={styles.input}
+            placeholder="Age"
             required
           />
-          <button type="submit" style={styles.button}>Submit</button>
+          <button type="submit" style={styles.actionBtn}>Update</button>
         </form>
-        <Link to="/view" style={styles.link}>View Clients</Link>
+        <Link to="/view" style={styles.link}>← Back to List</Link>
       </div>
     </div>
   );
@@ -93,15 +106,14 @@ const styles = {
     outline: 'none',
     backgroundColor: '#fafafa',
   },
-  button: {
-    padding: '12px',
+  actionBtn: {
     backgroundColor: '#d4af37',
     color: '#1a1a2e',
-    fontWeight: '600',
+    padding: '12px',
     border: 'none',
     borderRadius: '6px',
     cursor: 'pointer',
-    transition: 'background 0.3s',
+    fontWeight: '600',
   },
   link: {
     marginTop: '20px',
@@ -112,4 +124,4 @@ const styles = {
   }
 };
 
-export default Add;
+export default Edit;
