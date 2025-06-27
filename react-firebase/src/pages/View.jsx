@@ -1,10 +1,11 @@
 import { getDatabase, onValue, ref, remove } from 'firebase/database'
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { app } from '../firebase';
 
 const View = () => {
 
+  const navigate = useNavigate();
   const [allUser, setAllUser] = useState("");
 
   const db = getDatabase(app);
@@ -33,6 +34,13 @@ const View = () => {
   });
   }
 
+  const updateUser = (id,name,email) => {
+    
+    let data = {id,name,email}
+    navigate("/edit", {state: data})
+
+  }
+
   return (
     <div align="center" >
 
@@ -57,6 +65,7 @@ const View = () => {
                   <td>{value.email}</td>
                   <td>
                     <button onClick={() => deleteUser(key)}>Delete</button>
+                    <button onClick={() => updateUser(key,value.name,value.email)}>Update</button>
                   </td>
                 </tr>
               )
