@@ -186,7 +186,7 @@ const Add = () => {
       <br />
       <br />
    <div align="center">
-       <Link to="/" >Go Home</Link>
+       <Link to="/" >View user</Link>
    </div>
     </div>
   );
