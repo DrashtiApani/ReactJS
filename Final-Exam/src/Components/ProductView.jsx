@@ -82,7 +82,7 @@ const ProductView = () => {
                                 <td>₹{item.price}</td>
                                 <td>{item.description}</td>
                                 <td>
-                                    <img src={item.imageUrl} alt={item.name} width="90" height="90" style={{ objectFit: 'cover', borderRadius: '5px' }} />
+                                    <img src={item.imageUrl} width="90" height="90" style={{ objectFit: 'cover', borderRadius: '5px' }} />
                                 </td>
                                 <td>{item.quantity}</td>
                                 <td>

@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg" style={{ backgroundColor: '#f5ebe0' }}>
             <div className="container">
-                <Link className="navbar-brand fw-bold text-dark" to="/" style={{ fontSize: '1.5rem' }}>
+                <Link className="navbar-brand fw-bold text-dark" style={{ fontSize: '1.5rem' }}>
                     🛒 Product Manager
                 </Link>
                 <button

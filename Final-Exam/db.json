@@ -3,26 +3,26 @@
     {
       "id": "c595",
       "name": "book",
-      "price": "115",
+      "price": "315",
       "description": "A book is a set of printed or written pages, bound together and enclosed within covers, typically used to store knowledge, tell stories, or provide information.",
       "imageUrl": "https://static.vecteezy.com/system/resources/previews/009/399/398/non_2x/old-vintage-book-clipart-design-illustration-free-png.png",
-      "quantity": "1"
+      "quantity": "11"
     },
     {
-      "id": "51e9",
-      "name": "pencil",
-      "price": "15",
-      "description": "It is mainly used to write, draw, or sketch, and its marks can be easily erased.",
-      "imageUrl": "https://tse1.mm.bing.net/th/id/OIP.rSZQqGJyuJiGUWDh9icUqQHaHa?pid=Api&P=0&h=180",
-      "quantity": "2"
+      "id": "785a",
+      "name": "Muscara",
+      "price": "549",
+      "description": "Mascara is a cosmetic product applied to the eyelashes to make them appear longer, thicker, darker, and more defined.",
+      "imageUrl": "https://tse1.mm.bing.net/th/id/OIP.vsM-qNSgyPmvLfhqstRhAQHaHa?pid=Api&P=0&h=180",
+      "quantity": "17"
     },
     {
       "id": "d3fc",
       "name": "Eraser",
-      "price": "10",
+      "price": "45",
       "description": "An eraser is a common stationery item used primarily to remove pencil marks from paper or other surfaces.",
       "imageUrl": "https://tse2.mm.bing.net/th/id/OIP.5QcSCzCivUD8hqVPyEvgXQHaHa?pid=Api&P=0&h=180",
-      "quantity": "5"
+      "quantity": "22"
     },
     {
       "id": "d7f5",
@@ -30,15 +30,23 @@
       "price": "1500",
       "description": "It's a built-in pointing device that allows users to control the on-screen cursor without the need for an external mouse.",
       "imageUrl": "https://tse1.mm.bing.net/th/id/OIP.i1-6PtzNTWLQ9KcdOlgXQgHaGX?pid=Api&P=0&h=180",
-      "quantity": "8"
+      "quantity": "5"
     },
     {
       "id": "b456",
       "name": "socks",
-      "price": "129",
+      "price": "229",
       "description": "Athletic socks often come with arch support and cushioning.",
       "imageUrl": "https://tse1.mm.bing.net/th/id/OIP.WjZRgtDVvditBPzr0sulEgHaHV?pid=Api&P=0&h=180",
       "quantity": "25"
+    },
+    {
+      "id": "51e9",
+      "name": "pencil",
+      "price": "115",
+      "description": "It is mainly used to write, draw, or sketch, and its marks can be easily erased.",
+      "imageUrl": "https://tse1.mm.bing.net/th/id/OIP.rSZQqGJyuJiGUWDh9icUqQHaHa?pid=Api&P=0&h=180",
+      "quantity": "9"
     }
   ]
 }
