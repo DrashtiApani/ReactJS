@@ -1,64 +1,77 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { Link, useNavigate } from 'react-router-dom';
+import { LOGIN_USER } from '../Redux/Action/AuthAction'; // Adjust path if needed
 
-const Login = () => {
-    const navigate = useNavigate();
-    const [formData, setFormData] = useState({
-        email: '',
-        password: ''
+const LogInpage = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const [formInputs, setFormInputs] = useState({
+    email: '',
+    password: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormInputs({
+      ...formInputs,
+      [name]: value
     });
+  };
 
-    const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
-        });
-    };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    await dispatch(LOGIN_USER(formInputs));
 
-        // Simple static check (replace with real authentication later)
-        if (formData.email === 'admin@example.com' && formData.password === 'admin123') {
-            alert('Login successful!');
-            navigate('/products'); // or your dashboard route
-        } else {
-            alert('Invalid credentials');
-        }
-    };
+    const user = JSON.parse(localStorage.getItem("user"));
+    if (user) {
+      alert("Login successful!");
+      navigate("/products");
+    } else {
+      alert("Invalid credentials!");
+    }
+  };
 
-    return (
-        <div className="d-flex justify-content-center align-items-center vh-100 bg-light">
-            <div className="card p-4 shadow" style={{ width: '400px' }}>
-                <h3 className="text-center mb-4">Login to Product Manager</h3>
-                <form onSubmit={handleSubmit}>
-                    <div className="mb-3">
-                        <label>Email</label>
-                        <input
-                            type="email"
-                            className="form-control"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            required
-                        />
-                    </div>
-                    <div className="mb-3">
-                        <label>Password</label>
-                        <input
-                            type="password"
-                            className="form-control"
-                            name="password"
-                            value={formData.password}
-                            onChange={handleChange}
-                            required
-                        />
-                    </div>
-                    <button type="submit" className="btn btn-primary w-100">Login</button>
-                </form>
-            </div>
+  // Auto-redirect if already logged in
+  useEffect(() => {
+    const user = JSON.parse(localStorage.getItem("user"));
+    if (user) {
+      navigate("/products");
+    }
+  }, []);
+
+  return (
+    <div>
+      <form onSubmit={handleSubmit} className="container mt-5" style={{ maxWidth: '400px' }}>
+        <div className="mb-3">
+          <label className="form-label">Email address</label>
+          <input
+            type="email"
+            name="email"
+            onChange={handleChange}
+            value={formInputs.email}
+            className="form-control"
+            required
+          />
         </div>
-    );
+        <div className="mb-3">
+          <label className="form-label">Password</label>
+          <input
+            type="password"
+            name="password"
+            onChange={handleChange}
+            value={formInputs.password}
+            className="form-control"
+            required
+          />
+        </div>
+        <button type="submit" className="btn btn-primary">Login</button>
+        <Link to="/register" className="btn btn-secondary ms-2">Register</Link>
+      </form>
+    </div>
+  );
 };
 
-export default Login;
+export default LogInpage;

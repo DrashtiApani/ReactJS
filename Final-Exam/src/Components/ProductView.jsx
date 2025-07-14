@@ -1,20 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { GET_PRODUCTS, DELETE_PRODUCT } from '../../Redux/Action/ProductAction';
-import { Link } from 'react-router-dom';
+import { GET_PRODUCTS, DELETE_PRODUCT } from '../Redux/Action/ProductAction';
+import { Link, useNavigate } from 'react-router-dom';
 
 const ProductView = () => {
     const dispatch = useDispatch();
-    const products = useSelector((state) => state.crud.products);
+    const navigate = useNavigate();
+    const products = useSelector((state) => state.product.products);
 
     const [serching, setserching] = useState('');
     const [sorting, setsorting] = useState('');
     const [filterByQuantity, setFilterByQuantity] = useState('');
 
-    useEffect(() => {
+  useEffect(() => {
+    const user = JSON.parse(localStorage.getItem("user"));
+    if (!user) {
+        navigate('/login');
+    } else {
         dispatch(GET_PRODUCTS());
-    }, [dispatch]);
+    }
+}, [dispatch, navigate]);
 
+
+    const user = JSON.parse(localStorage.getItem("user"));
+    const loginUser = useSelector(state => state.auth.loginUser);
+    
     const handleDelete = (id) => {
         if (window.confirm("Are you sure you want to delete this product?")) {
             dispatch(DELETE_PRODUCT(id));
@@ -33,7 +43,6 @@ const ProductView = () => {
     return (
         <div className="container mt-5">
             <h1 className="text-center mb-4">📦 Product List</h1>
-
             {/* 🔍 Filter Controls */}
             <div className="d-flex flex-wrap gap-2 justify-content-between align-items-center mb-4">
                 <input
@@ -59,7 +68,7 @@ const ProductView = () => {
                     value={filterByQuantity}
                     onChange={(e) => setFilterByQuantity(e.target.value)}
                 />
-                <Link to="/" className="btn btn-success px-4 py-2">+ Add Product</Link>
+                <Link to="/ProductAdd" className="btn btn-success px-4 py-2">+ Add Product</Link>
             </div>
 
             {/* 🧾 Product Table */}
@@ -93,8 +102,7 @@ const ProductView = () => {
                                         >
                                             🗑 Delete
                                         </button>
-                                        <Link
-                                            to={`/productupdate/${item.id}`}
+                                        <Link to={`/productupdate/${item.id}`}
                                             className="btn btn-outline-primary btn-sm px-3"
                                         >
                                             ✏️ Update

@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { ADD_PRODUCT } from '../../Redux/Action/ProductAction';
+import { ADD_PRODUCT } from '../Redux/Action/ProductAction';
 
 const ProductAdd = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
+
     const [formInputs, setFormInputs] = useState({
         name: '',
         price: '',
@@ -27,6 +28,16 @@ const ProductAdd = () => {
         dispatch(ADD_PRODUCT(formInputs));
         navigate('/products');
     };
+
+
+    // const loginUser = useSelector(state => state.auth.loginUser);
+
+    // useEffect(() => {
+    //     if (!loginUser) {
+    //         navigate('/login');
+    //     }
+    // }, [loginUser, navigate]);
+
 
     return (
         <div className="container mt-5">

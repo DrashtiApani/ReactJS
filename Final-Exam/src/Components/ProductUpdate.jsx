@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useParams, useNavigate } from 'react-router-dom';
-import { UPDATE_PRODUCT } from '../../Redux/Action/ProductAction';
+import { UPDATE_PRODUCT } from '../Redux/Action/ProductAction';
 
 const ProductUpdate = () => {
     const { id } = useParams();

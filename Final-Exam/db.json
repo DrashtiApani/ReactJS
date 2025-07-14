@@ -1,4 +1,11 @@
 {
+  "users": [
+    {
+      "id": "5b37",
+      "email": "drashtiapani4@gmail.com",
+      "password": "12345"
+    }
+  ],
   "products": [
     {
       "id": "c595",
@@ -47,6 +54,14 @@
       "description": "It is mainly used to write, draw, or sketch, and its marks can be easily erased.",
       "imageUrl": "https://tse1.mm.bing.net/th/id/OIP.rSZQqGJyuJiGUWDh9icUqQHaHa?pid=Api&P=0&h=180",
       "quantity": "9"
+    },
+    {
+      "id": "6194",
+      "name": "a",
+      "price": "",
+      "description": "",
+      "imageUrl": "",
+      "quantity": ""
     }
   ]
 }

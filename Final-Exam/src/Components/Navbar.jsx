@@ -1,7 +1,20 @@
-import React from 'react';
+
+import { useDispatch, useSelector } from 'react-redux';
+import { LOGOUT_USER } from '../Redux/Action/AuthAction';
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+    const loginUser = useSelector((state) => state.auth.loginUser);
+
+    const handleLogout = () => {
+        dispatch(LOGOUT_USER());
+        navigate('/login');
+    };
+
     return (
         <nav className="navbar navbar-expand-lg" style={{ backgroundColor: '#f5ebe0' }}>
             <div className="container">
@@ -23,7 +36,7 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link className="nav-link text-dark fw-semibold" to="/">Add Product</Link>
+                            <Link className="nav-link text-dark fw-semibold" to="/ProductAdd">Add Product</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link text-dark fw-semibold" to="/products">View Products</Link>
@@ -42,6 +55,7 @@ const Navbar = () => {
                         <button className="btn" style={{ backgroundColor: '#d6ccc2', color: '#4b3832' }} type="submit">
                             Search
                         </button>
+                          {loginUser && <button className="btn btn-danger" onClick={handleLogout}>Logout</button>}
                     </form>
                 </div>
             </div>
